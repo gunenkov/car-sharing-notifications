@@ -22,7 +22,7 @@ connection = pika.BlockingConnection(parameters)
 
 channel = connection.channel()
 
-queue = "drive-notification"
+queue = "drives-notification"
 
 channel.queue_declare(queue=queue)
 
